@@ -1,0 +1,142 @@
+.container1{
+    padding: 16px;
+}
+.container {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding: 10px 550px 0 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.container-content {
+    backdrop-filter: blur(10px);
+    background: rgba(56, 199, 255, 0.1);
+    color: #ffffff;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 50%;
+    height: 500px;
+}
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 1px solid white;
+    margin: 30px 0;
+
+}
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: white;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #f5cc00;
+    transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: #f5cc00;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:focus ~ span::before{
+    width: 100%;
+}
+
+.eye_toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.eye_toggle i {
+    font-size: 18px;
+    line-height: 1;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 22px;
+}
+.eye_toggle i:hover {
+    color: #f5cc00;
+}
+.acct{
+    color: white;
+}
+.slc{
+    padding: 5px;
+}
+
+
+.lform {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+#btn {
+    background-color: #f5cc00;
+    color: black;
+    font-weight: bolder;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#btn:hover {
+background-color: #d8a900;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 15px 0 -9px 0;
+    position: relative;
+}
+img.logo1 {
+    width: 175px;
+    filter: drop-shadow(0 0 0.25rem rgb(0, 0, 0));
+}
